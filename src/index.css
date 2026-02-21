@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;800;900&family=Montserrat:wght@200;300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Kanit", ui-sans-serif, system-ui, sans-serif;
+
+  --color-stone-dark: #1A1A1A;
+  --color-stone-light: #2C2C2C;
+  --color-bone: #EAEAEA;
+  --color-bronze: #A8894B;
+  --color-terracotta: #8D5B4C;
+}
+
+body {
+  background-color: var(--color-stone-dark);
+  color: var(--color-bone);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+/* Stone Texture Utility */
+.bg-stone-texture {
+  background-color: var(--color-stone-dark);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+.bg-stone-light-texture {
+  background-color: var(--color-stone-light);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+/* Carved Stone Button */
+.btn-stone {
+  background: linear-gradient(145deg, #2f2f2f, #1e1e1e);
+  box-shadow:  5px 5px 10px #121212,
+               -5px -5px 10px #363636;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: all 0.3s ease;
+}
+
+.btn-stone:active {
+  background: #2C2C2C;
+  box-shadow: inset 5px 5px 10px #121212,
+              inset -5px -5px 10px #363636;
+}
+
+.btn-bronze {
+  background: linear-gradient(145deg, #b49350, #977b43);
+  color: #1A1A1A;
+  box-shadow: 0 4px 15px rgba(168, 137, 75, 0.2);
+}
+
+.btn-bronze:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
