@@ -1,0 +1,8 @@
+Aquí puedes colocar las imágenes que formen parte de tu código de React.
+
+Las imágenes colocadas aquí puedes importarlas directamente en los archivos de tu proyecto usando `import`.
+Por ejemplo, si pones `fondo.jpg` en esta carpeta, puedes usarla en `LinkTree.tsx` así:
+
+import fondoImg from '@/assets/images/fondo.jpg';
+
+<div style={{ backgroundImage: `url(${fondoImg})` }}>...</div>

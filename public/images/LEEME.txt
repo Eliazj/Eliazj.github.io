@@ -1,0 +1,6 @@
+Aquí puedes colocar las imágenes públicas de tu sitio web (como logos, fotos para el linktree, etc.).
+
+Cualquier imagen que pongas aquí la puedes usar directamente en el código usando la ruta relativa.
+Por ejemplo, si pones una imagen llamada `logo.png` en esta carpeta, en tu código de React la puedes usar así:
+
+<img src="/images/logo.png" alt="Logo Nixta" />
