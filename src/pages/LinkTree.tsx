@@ -7,10 +7,9 @@ export default function LinkTree() {
             {/* Header Image with heavy dark overlay */}
             <div className="w-full h-56 md:h-64 relative z-0">
                 <img
-                    src="https://picsum.photos/seed/nixta-dark/1920/1080?grayscale&blur=1"
-                    alt="Textura Nixta"
+                    src="/images/foto-pozole.png"
+                    alt="Pozole Nixta"
                     className="w-full h-full object-cover opacity-80"
-                    referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-stone-dark/50 via-stone-dark/80 to-stone-dark"></div>
             </div>
