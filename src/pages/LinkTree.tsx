@@ -17,18 +17,15 @@ export default function LinkTree() {
 
             {/* Logo Area */}
             <div className="relative z-10 flex flex-col items-center -mt-20 md:-mt-24">
-                <div className="w-36 h-36 md:w-44 md:h-44 relative flex items-center justify-center">
-                    {/* Dark stone background for logo to make it pop against the header */}
-                    <div className="absolute inset-0 bg-stone-dark rounded-full shadow-[0_0_30px_rgba(0,0,0,0.8)] flex items-center justify-center p-2 border border-white/5">
-                        <img src="/images/Isologo-X.png" alt="Logo Nixta" className="w-full h-full object-contain" onError={(e) => {
-                            // Fallback if image is missing
-                            e.currentTarget.style.display = 'none';
-                            e.currentTarget.parentElement?.classList.add('fallback-logo');
-                            if (e.currentTarget.parentElement) {
-                                e.currentTarget.parentElement.innerHTML = '<span class="text-bronze font-display font-black text-5xl">X</span>';
-                            }
-                        }} />
-                    </div>
+                <div className="w-40 h-40 md:w-48 md:h-48 relative flex items-center justify-center drop-shadow-[0_0_20px_rgba(0,0,0,0.8)]">
+                    {/* Plain logo without borders or rounded background */}
+                    <img src="/images/Isologo-X.png" alt="Logo Nixta" className="w-full h-full object-contain drop-shadow-xl" onError={(e) => {
+                        // Fallback if image is missing
+                        e.currentTarget.style.display = 'none';
+                        if (e.currentTarget.parentElement) {
+                            e.currentTarget.parentElement.innerHTML = '<div class="w-24 h-24 bg-stone-dark rotate-45 flex items-center justify-center shadow-lg border border-white/5"><span class="text-bronze font-display font-black text-5xl -rotate-45">X</span></div>';
+                        }
+                    }} />
                 </div>
 
                 <h1 className="mt-8 text-5xl md:text-6xl font-display font-black text-bone tracking-widest uppercase drop-shadow-lg">
