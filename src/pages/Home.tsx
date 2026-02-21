@@ -9,9 +9,9 @@ export default function Home() {
       <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
         {/* Background Image with Heavy Overlay */}
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://picsum.photos/seed/nixta-dark/1920/1080?grayscale&blur=1" 
-            alt="Textura de maíz oscuro" 
+          <img
+            src="https://picsum.photos/seed/nixta-dark/1920/1080?grayscale&blur=1"
+            alt="Textura de maíz oscuro"
             className="w-full h-full object-cover opacity-60 scale-105"
             referrerPolicy="no-referrer"
           />
@@ -27,13 +27,13 @@ export default function Home() {
             transition={{ duration: 1, ease: "easeOut" }}
           >
             <h1 className="text-5xl md:text-7xl lg:text-9xl font-display font-black text-bone mb-8 leading-[0.9] tracking-tighter uppercase drop-shadow-2xl">
-              El sabor que nace <br/>
+              El sabor que nace <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-bone via-stone-400 to-stone-600">
                 de la piedra
-              </span> <br/>
+              </span> <br />
               y la raíz.
             </h1>
-            
+
             <div className="w-24 h-1 bg-bronze mx-auto mb-8"></div>
 
             <p className="text-lg md:text-2xl text-bone/80 font-light max-w-2xl mx-auto mb-12 tracking-wide">
@@ -41,7 +41,7 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Link 
+              <Link
                 to="/menu"
                 className="btn-stone px-10 py-5 text-bone font-display font-bold text-sm uppercase tracking-[0.2em] hover:text-bronze flex items-center gap-3 group"
               >
@@ -51,9 +51,9 @@ export default function Home() {
             </div>
           </motion.div>
         </div>
-        
+
         {/* Scroll Indicator */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 1 }}
@@ -68,9 +68,9 @@ export default function Home() {
       <section id="origen" className="py-32 bg-stone-light-texture relative border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-            
+
             {/* Text Content */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -81,37 +81,37 @@ export default function Home() {
                 <div className="w-12 h-[1px] bg-bronze"></div>
                 <span className="text-bronze font-display font-bold uppercase tracking-[0.2em] text-sm">El Origen</span>
               </div>
-              
+
               <h2 className="text-4xl md:text-6xl font-display font-black text-bone leading-none uppercase">
-                Respeto al <br/>
-                <span className="text-stone-500">Maíz Sagrado</span>
+                Nuestra cocina <br />
+                <span className="text-stone-500">de raíz</span>
               </h2>
-              
+
               <div className="space-y-6 text-bone/60 text-lg font-light leading-relaxed text-justify">
                 <p>
-                  En NIXTA, entendemos la cocina como un ritual. No solo servimos alimentos; honramos la memoria de la tierra.
-                  Nuestra nixtamalización es diaria, lenta y precisa, como lo dictan los cánones antiguos.
+                  Bienvenidos a nuestra mesa. NIXTA es el resultado de un proyecto en pareja donde la fe y la tradición se encuentran
+                  para crear algo auténtico.
                 </p>
                 <p>
-                  Somos un templo moderno donde la piedra volcánica y el maíz criollo convergen. 
-                  Sin pretensiones, pero con una ejecución impecable. Aquí, el lujo es el tiempo que dedicamos a cada proceso.
+                  Para nosotros, Cocina de Raíz significa construir comunidad a través de los sabores que nos unen y nos dan identidad.
+                  Esperamos que disfrutes este momento tanto como nosotros disfrutamos prepararlo para ti.
                 </p>
               </div>
 
               <div className="grid grid-cols-2 gap-8 pt-8 border-t border-white/5">
                 <div>
-                  <h4 className="font-display font-bold text-2xl text-bone mb-2">12 Horas</h4>
-                  <p className="text-sm text-bone/40 uppercase tracking-wider">De cocción lenta</p>
+                  <h4 className="font-display font-bold text-2xl text-bone mb-2">Caldo de cocción lenta</h4>
+                  <p className="text-sm text-bone/40 uppercase tracking-wider">Por varias horas</p>
                 </div>
                 <div>
-                  <h4 className="font-display font-bold text-2xl text-bone mb-2">100%</h4>
-                  <p className="text-sm text-bone/40 uppercase tracking-wider">Maíz Criollo</p>
+                  <h4 className="font-display font-bold text-2xl text-bone mb-2"></h4>
+                  <p className="text-sm text-bone/40 uppercase tracking-wider"></p>
                 </div>
               </div>
             </motion.div>
 
             {/* Image Composition */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -119,9 +119,9 @@ export default function Home() {
               className="relative h-[600px] w-full"
             >
               <div className="absolute inset-0 bg-stone-dark transform rotate-3 border border-white/5 z-0"></div>
-              <img 
-                src="https://picsum.photos/seed/volcanic-texture/800/1000?grayscale" 
-                alt="Textura de piedra volcánica y maíz" 
+              <img
+                src="https://picsum.photos/seed/volcanic-texture/800/1000?grayscale"
+                alt="Textura de piedra volcánica y maíz"
                 className="absolute inset-0 w-full h-full object-cover grayscale contrast-125 z-10"
                 referrerPolicy="no-referrer"
               />
@@ -145,11 +145,11 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: "Pozole Rojo", desc: "Cerdo maciza, chile guajillo, rábano negro.", icon: Flame },
-              { title: "Verde Guerrero", desc: "Pepita, hierbas santas, chicharrón prensado.", icon: Wheat },
-              { title: "Maíz y Tuétano", desc: "Caldo claro, hueso de tuétano asado, sal de gusano.", icon: UtensilsCrossed }
+              { title: "Pozole Rojo", desc: "Nuestra especialidad con caldo de chiles rojos. Elige tu proteína: Maciza, Surtida o Pollo.", icon: Flame },
+              { title: "Pozole Blanco", desc: "El sabor puro del maíz cacahuazintle. Elige tu proteína: Maciza, Surtida o Pollo.", icon: Wheat },
+              { title: "Antojitos", desc: "Tostadas caseras de Pata, Tinga NIXTA o Picadillo con base de frijol y queso.", icon: UtensilsCrossed }
             ].map((item, idx) => (
-              <motion.div 
+              <motion.div
                 key={idx}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -170,7 +170,7 @@ export default function Home() {
           </div>
 
           <div className="mt-20 text-center">
-            <Link 
+            <Link
               to="/menu"
               className="btn-stone px-12 py-4 text-bone font-display font-bold text-xs uppercase tracking-[0.25em] hover:text-bronze inline-block"
             >
