@@ -119,7 +119,7 @@ export default function Home() {
             >
               <div className="absolute inset-0 bg-stone-dark transform rotate-3 border border-white/5 z-0"></div>
               <img
-                src="/images/pozole-manos.png.png"
+                src="/images/pozole-manos.png"
                 alt="Textura de piedra volcánica y maíz"
                 className="absolute inset-0 w-full h-full object-cover grayscale contrast-125 z-10"
                 referrerPolicy="no-referrer"
