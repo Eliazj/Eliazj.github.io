@@ -44,8 +44,8 @@ export default function LinkTree() {
             {/* Buttons */}
             <div className="flex flex-col items-center gap-5 mt-8 px-6 relative z-10 w-full max-w-sm mx-auto">
                 {[
-                    { text: 'INSTAGRAM', url: '#' },
-                    { text: 'FACEBOOK', url: '#' },
+                    { text: 'INSTAGRAM', url: 'https://www.instagram.com/nixtacocinaderaiz/' },
+                    { text: 'FACEBOOK', url: 'https://www.facebook.com/Nixtacocinaderaiz' },
                     { text: 'PAGINA WEB', url: '/' },
                     { text: 'PROXIMAMENTE', url: '#' },
                 ].map((btn, idx) => (
@@ -66,7 +66,7 @@ export default function LinkTree() {
                 <a href="tel:+" className="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center text-bone hover:text-stone-dark hover:bg-bronze hover:border-bronze transition-all duration-300 shadow-lg">
                     <Phone size={22} strokeWidth={1.5} />
                 </a>
-                <a href="#" className="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center text-bone hover:text-stone-dark hover:bg-bronze hover:border-bronze transition-all duration-300 shadow-lg">
+                <a href="https://maps.app.goo.gl/SH3azTxPMxNePBCK8" className="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center text-bone hover:text-stone-dark hover:bg-bronze hover:border-bronze transition-all duration-300 shadow-lg">
                     <MapPin size={22} strokeWidth={1.5} />
                 </a>
             </div>

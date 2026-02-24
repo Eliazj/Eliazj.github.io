@@ -10,7 +10,7 @@ export default function Home() {
         {/* Background Image with Heavy Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://picsum.photos/seed/nixta-dark/1920/1080?grayscale&blur=1"
+            src="/images/foto-pozole.png"
             alt="Textura de maíz oscuro"
             className="w-full h-full object-cover opacity-60 scale-105"
             referrerPolicy="no-referrer"
@@ -29,9 +29,8 @@ export default function Home() {
             <h1 className="text-5xl md:text-7xl lg:text-9xl font-display font-black text-bone mb-8 leading-[0.9] tracking-tighter uppercase drop-shadow-2xl">
               El sabor que nace <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-bone via-stone-400 to-stone-600">
-                de la piedra
-              </span> <br />
-              y la raíz.
+                de la raíz
+              </span>
             </h1>
 
             <div className="w-24 h-1 bg-bronze mx-auto mb-8"></div>
@@ -120,7 +119,7 @@ export default function Home() {
             >
               <div className="absolute inset-0 bg-stone-dark transform rotate-3 border border-white/5 z-0"></div>
               <img
-                src="https://picsum.photos/seed/volcanic-texture/800/1000?grayscale"
+                src="/images/pozole-manos.png.png"
                 alt="Textura de piedra volcánica y maíz"
                 className="absolute inset-0 w-full h-full object-cover grayscale contrast-125 z-10"
                 referrerPolicy="no-referrer"
