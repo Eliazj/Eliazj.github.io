@@ -16,7 +16,7 @@ export default function Footer() {
             </div>
             <p className="text-bone/40 text-sm font-light leading-relaxed max-w-sm">
               Cocina de raíz. Un tributo a la tierra, al maíz y al tiempo.
-              <br />Norte 90 5621 col. Gertrudis Sanchez II Secc. 07839 G.A.M CDMX
+              <br />Gustavo A. Madero, Ciudad de México.
             </p>
           </div>
 
@@ -26,7 +26,6 @@ export default function Footer() {
             <div className="space-y-4 text-bone/60 font-light text-sm">
               <p>Norte 90 5621, col. Gertrudis Sanchez II Secc.</p>
               <p>07839 G.A.M CDMX</p>
-              <p>hola@nixta.mx</p>
             </div>
           </div>
 
@@ -34,8 +33,7 @@ export default function Footer() {
           <div className="space-y-6">
             <h3 className="font-display font-bold text-xs text-bronze uppercase tracking-[0.2em]">Horarios</h3>
             <div className="space-y-2 text-bone/60 font-light text-sm">
-              <p>Mar - Sáb: 13:00 - 23:00</p>
-              <p>Dom: 12:00 - 18:00</p>
+              <p>Jueves - Sábado: 18:00 - 23:00</p>
             </div>
             <div className="flex gap-4 pt-2">
               <a href="https://www.instagram.com/nixtacocinaderaiz/" target="_blank" rel="noopener noreferrer" className="text-bone/40 hover:text-bronze transition-colors">
@@ -50,7 +48,7 @@ export default function Footer() {
 
         <div className="border-t border-white/5 mt-20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-bone/20 text-[10px] uppercase tracking-widest">
           <p>&copy; {new Date().getFullYear()} NIXTA.</p>
-          <p>Diseñado con propósito.</p>
+          <p>Diseñado por <a href="https://luzyco.com" target="_blank" rel="noopener noreferrer" className="text-bone/40 hover:text-bronze transition-colors">Luz&Co.</a></p>
         </div>
       </div>
     </footer>
