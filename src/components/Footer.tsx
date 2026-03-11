@@ -1,4 +1,4 @@
-import { MapPin, Phone, Clock, Instagram, Facebook } from 'lucide-react';
+import { MapPin, Phone, Clock, Instagram, Facebook, Link as LinkIcon, Utensils } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -26,21 +26,32 @@ export default function Footer() {
             <div className="space-y-4 text-bone/60 font-light text-sm">
               <p>Norte 90 5621, col. Gertrudis Sanchez II Secc.</p>
               <p>07839 G.A.M CDMX</p>
+              <p className="pt-2">
+                <a href="https://wa.me/527201878994" target="_blank" rel="noopener noreferrer" className="hover:text-bronze transition-colors flex items-center gap-2">
+                  <Phone size={16} /> WhatsApp: 7201878994
+                </a>
+              </p>
             </div>
           </div>
 
           {/* Social / Hours */}
           <div className="space-y-6">
-            <h3 className="font-display font-bold text-xs text-bronze uppercase tracking-[0.2em]">Horarios</h3>
+            <h3 className="font-display font-bold text-xs text-bronze uppercase tracking-[0.2em]">Redes y Horarios</h3>
             <div className="space-y-2 text-bone/60 font-light text-sm">
               <p>Jueves - Sábado: 18:00 - 23:00</p>
             </div>
-            <div className="flex gap-4 pt-2">
-              <a href="https://www.instagram.com/nixtacocinaderaiz/" target="_blank" rel="noopener noreferrer" className="text-bone/40 hover:text-bronze transition-colors">
+            <div className="flex flex-wrap gap-4 pt-2">
+              <a href="https://www.instagram.com/nixtacocinaderaiz/" target="_blank" rel="noopener noreferrer" className="text-bone/40 hover:text-bronze transition-colors" title="Instagram">
                 <Instagram size={20} strokeWidth={1.5} />
               </a>
-              <a href="https://www.facebook.com/Nixtacocinaderaiz" target="_blank" rel="noopener noreferrer" className="text-bone/40 hover:text-bronze transition-colors">
+              <a href="https://www.facebook.com/Nixtacocinaderaiz" target="_blank" rel="noopener noreferrer" className="text-bone/40 hover:text-bronze transition-colors" title="Facebook">
                 <Facebook size={20} strokeWidth={1.5} />
+              </a>
+              <a href="https://linktr.ee/NIXTAPOZOLE" target="_blank" rel="noopener noreferrer" className="text-bone/40 hover:text-bronze transition-colors" title="Linktree">
+                <LinkIcon size={20} strokeWidth={1.5} />
+              </a>
+              <a href="https://tinyurl.com/27s7ngcm" target="_blank" rel="noopener noreferrer" className="text-bone/40 hover:text-bronze transition-colors" title="Uber Eats">
+                <Utensils size={20} strokeWidth={1.5} />
               </a>
             </div>
           </div>

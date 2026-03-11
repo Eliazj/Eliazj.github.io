@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Facebook, Instagram } from 'lucide-react';
+import { Menu, X, Facebook, Instagram, Phone, Utensils } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 export default function Navbar() {
@@ -52,12 +52,20 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Link
-              to="/menu"
+            <a
+              href="https://wa.me/527201878994"
+              target="_blank" rel="noopener noreferrer"
               className="btn-bronze text-stone-dark px-6 py-3 font-display font-bold text-xs uppercase tracking-widest hover:brightness-110 transition-all duration-300"
             >
-              Pedir / WhatsApp
-            </Link>
+              WhatsApp
+            </a>
+            <a
+              href="https://tinyurl.com/27s7ngcm"
+              target="_blank" rel="noopener noreferrer"
+              className="bg-stone-dark/50 border border-white/10 text-bone px-6 py-3 font-display font-bold text-xs uppercase tracking-widest hover:text-bronze transition-all duration-300"
+            >
+              Uber Eats
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -96,6 +104,8 @@ export default function Navbar() {
               <div className="flex gap-8">
                 <a href="https://www.instagram.com/nixtacocinaderaiz/" target="_blank" rel="noopener noreferrer" className="text-bone/60 hover:text-bronze transition-colors"><Instagram size={24} /></a>
                 <a href="https://www.facebook.com/Nixtacocinaderaiz" target="_blank" rel="noopener noreferrer" className="text-bone/60 hover:text-bronze transition-colors"><Facebook size={24} /></a>
+                <a href="https://wa.me/527201878994" target="_blank" rel="noopener noreferrer" className="text-bone/60 hover:text-bronze transition-colors"><Phone size={24} /></a>
+                <a href="https://tinyurl.com/27s7ngcm" target="_blank" rel="noopener noreferrer" className="text-bone/60 hover:text-bronze transition-colors"><Utensils size={24} /></a>
               </div>
             </div>
           </motion.div>

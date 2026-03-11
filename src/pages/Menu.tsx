@@ -83,14 +83,6 @@ export default function Menu() {
     }
   ];
 
-  const extras = [
-    { name: "Crema extra", price: "10" },
-    { name: "Aguacate", price: "25" },
-    { name: "Chicharrón (Individual)", price: "39" },
-    { name: "Chicharrón (Familiar)", price: "79" },
-    { name: "Suero (Vaso con sal y limón)", price: "15" },
-  ];
-
   const bebidas = [
     { name: "Café de olla", price: "30" },
     { name: "Americano", price: "30" },
@@ -101,6 +93,7 @@ export default function Menu() {
     { name: "Agua mineral", price: "30" },
     { name: "Agua de Jamaica ½ litro", price: "25" },
     { name: "Agua de Jamaica 1 litro", price: "40" },
+    { name: "Suero (Vaso con sal y limón)", price: "15" },
   ];
 
   const postres = [
@@ -132,7 +125,6 @@ export default function Menu() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <MenuSection title="Pozoles" icon={Utensils} items={pozoles} />
         <MenuSection title="Tostadas" icon={Leaf} items={tostadas} />
-        <MenuSection title="Extras" icon={Plus} items={extras} />
         <MenuSection title="Postres" icon={Star} items={postres} />
         <MenuSection title="Bebidas" icon={Coffee} items={bebidas} />
 
