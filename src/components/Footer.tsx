@@ -47,7 +47,7 @@ export default function Footer() {
               <a href="https://www.facebook.com/Nixtacocinaderaiz" target="_blank" rel="noopener noreferrer" className="text-bone/40 hover:text-bronze transition-colors" title="Facebook">
                 <Facebook size={20} strokeWidth={1.5} />
               </a>
-              <a href="https://linktr.ee/NIXTAPOZOLE" target="_blank" rel="noopener noreferrer" className="text-bone/40 hover:text-bronze transition-colors" title="Linktree">
+              <a href="https://nixta.me/linktree" target="_blank" rel="noopener noreferrer" className="text-bone/40 hover:text-bronze transition-colors" title="Linktree">
                 <LinkIcon size={20} strokeWidth={1.5} />
               </a>
               <a href="https://tinyurl.com/27s7ngcm" target="_blank" rel="noopener noreferrer" className="text-bone/40 hover:text-bronze transition-colors" title="Uber Eats">
